@@ -85,7 +85,7 @@ def pull():
   defaultconfig["postgis"]["user"]     = ""
   defaultconfig["postgis"]["password"] = ""
   defaultconfig["postgis"]["extent"] = "-20037508.34 -20037508.34 20037508.34 20037508.34"
-  defaultconfig["name"] = "OSM Bright"
+  defaultconfig["name"] = "OSM Bright Mobile"
   defaultconfig["land-high"] = "http://data.openstreetmapdata.com/land-polygons-split-3857.zip"
   defaultconfig["land-low"] = "http://data.openstreetmapdata.com/simplified-land-polygons-complete-3857.zip"
 
@@ -122,3 +122,4 @@ if __name__ == "__main__":
     clean()
     build()
     install()
+

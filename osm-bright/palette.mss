@@ -1,5 +1,5 @@
 /* ****************************************************************** */
-/* OSM BRIGHT for Imposm                                              */
+/* OSM Bright Mobile                                                  */
 /* ****************************************************************** */
 
 /* For basic style customization you can simply edit the colors and
@@ -30,7 +30,7 @@ Map { font-directory: url(./fonts); }
 
 /* Some fonts are larger or smaller than others. Use this variable to
    globally increase or decrease the font sizes. */
-/* Note this is only implemented for certain things so far */
+/* Note this doesn't apply to all labels */
 @text_adjust: 8;
 
 /* ================================================================== */

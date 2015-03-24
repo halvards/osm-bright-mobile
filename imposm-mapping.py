@@ -1,11 +1,11 @@
 # Copyright 2011 Omniscale (http://omniscale.com)
-# 
+#
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
-# 
+#
 #     http://www.apache.org/licenses/LICENSE-2.0
-# 
+#
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -25,16 +25,16 @@ from imposm.mapping import (
 # # internal configuration options
 # # uncomment to make changes to the default values
 import imposm.config
-# 
+#
 # # import relations with missing rings
 imposm.config.import_partial_relations = False
-# 
+#
 # # select relation builder: union or contains
 imposm.config.relation_builder = 'contains'
-# 
+#
 # # log relation that take longer than x seconds
 # imposm.config.imposm_multipolygon_report = 60
-# 
+#
 # # skip relations with more rings (0 skip nothing)
 # imposm.config.imposm_multipolygon_max_ring = 0
 
@@ -228,7 +228,7 @@ railways = LineStrings(
 
 waterways = LineStrings(
     name = 'waterways',
-    mapping = {  
+    mapping = {
         'barrier': (
             'ditch',
         ),
@@ -253,7 +253,7 @@ waterareas = Polygons(
     mapping = {
         'waterway': ('riverbank',),
         'natural': ('water',),
-        'landuse': ('basin', 'reservoir'), 
+        'landuse': ('basin', 'reservoir'),
     },
 )
 
