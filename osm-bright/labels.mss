@@ -45,7 +45,7 @@
   }
 }
 
-#place::state[type='state'][zoom>=5][zoom<=10] {
+#place::state[type='state'][name!='Jervis Bay Territory'][zoom>=5][zoom<=10] {
   text-name:'[name]';
   text-face-name:@sans_bold_italic;
   text-placement:point;
@@ -80,54 +80,75 @@
   }
 }
 
+/* ---- Capital Cities ---------------------------------------------- */
+
+#place::city[type='city'][admin_level!=null] {
+    text-name:'[name]';
+    text-face-name:@sans;
+    text-placement:point;
+    text-fill:@city_text;
+    text-halo-fill:@city_halo;
+    text-halo-radius:2;
+    [zoom>=3][zoom<=5] {
+      text-size: 10 + @text_adjust;
+      text-halo-radius:1;
+    }
+}
+
 /* ---- Cities ------------------------------------------------------ */
 
-#place::city[type='city'][zoom>=8][zoom<=15] {
-  text-name:'[name]';
-  text-face-name:@sans;
-  text-placement:point;
-  text-fill:@city_text;
-  text-halo-fill:@city_halo;
-  text-halo-radius:2;
-  [zoom<=8] {
-    text-size: 10 + @text_adjust;
-    text-halo-radius:1;
-  }
-  [zoom=9] {
-    text-size:10 + @text_adjust;
-    text-wrap-width: 60;
-  }
-  [zoom=10] {
-    text-size:11 + @text_adjust;
-    text-wrap-width: 70;
-  }
-  [zoom=11] {
-    text-size:12 + @text_adjust;
-    text-character-spacing: 1;
-    text-wrap-width: 80;
-  }
-  [zoom=12] {
-    text-size:13 + @text_adjust;
-    text-character-spacing: 1;
-    text-wrap-width: 100;
-  }
-  [zoom=13] {
-    text-size:14 + @text_adjust;
-    text-character-spacing: 2;
-    text-wrap-width: 200;
-    text-transform: uppercase;
-  }
-  [zoom=14] {
-    text-size:15 + @text_adjust;
-    text-character-spacing: 4;
-    text-wrap-width: 300;
-    text-transform: uppercase;
-  }
-  [zoom=15] {
-    text-size:16 + @text_adjust;
-    text-character-spacing: 6;
-    text-wrap-width: 400;
-    text-transform: uppercase;
+#place::city[type='city'] {
+  [zoom>=6][zoom<=15] {
+    text-name:'[name]';
+    text-face-name:@sans;
+    text-placement:point;
+    text-fill:@city_text;
+    text-halo-fill:@city_halo;
+    text-halo-radius:2;
+    [zoom>=6][zoom<=7][population>=1000000] {
+      text-size: 10 + @text_adjust;
+      text-halo-radius:1;
+    }
+    [zoom=8] {
+      text-size: 10 + @text_adjust;
+      text-halo-radius:1;
+    }
+    [zoom=9] {
+      text-size:10 + @text_adjust;
+      text-wrap-width: 60;
+    }
+    [zoom=10] {
+      text-size:11 + @text_adjust;
+      text-wrap-width: 70;
+    }
+    [zoom=11] {
+      text-size:12 + @text_adjust;
+      text-character-spacing: 1;
+      text-wrap-width: 80;
+    }
+    [zoom=12] {
+      text-size:13 + @text_adjust;
+      text-character-spacing: 1;
+      text-wrap-width: 100;
+    }
+    [zoom=13] {
+      text-size:14 + @text_adjust;
+      text-character-spacing: 2;
+      text-wrap-width: 200;
+      text-transform: uppercase;
+    }
+    [zoom=14] {
+      text-size:15 + @text_adjust;
+      text-character-spacing: 4;
+      text-wrap-width: 300;
+      text-transform: uppercase;
+    }
+    [zoom=15] {
+      text-size:16 + @text_adjust;
+      text-character-spacing: 6;
+      text-wrap-width: 400;
+      text-transform: uppercase;
+    }
   }
 }
 
@@ -440,7 +461,6 @@
   text-halo-radius:1;
   text-min-distance:60;
   text-avoid-edges: true;
-  text-size:11;
 }
 
 /* ================================================================== */

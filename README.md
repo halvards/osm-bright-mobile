@@ -95,7 +95,8 @@ You can find appropriate data extracts for a variety of regions and countries at
 
 You need to process this data and import it to your PostGIS database. You can either look at the Ansible playbooks of the provided Vagrant virtual machines, or for the impatient, run this command:
 
-    osm2pgsql -c -G -U <postgres_user> -d <postgis_database> <data.osm.pbf>
+    osm2pgsql --slim --cache 1024 --cache-strategy=dense \
+      -U <postgres_user> -d <postgis_database> <data.osm.pbf>
 
 See `man osm2pgsql` or the [online documentation](http://wiki.openstreetmap.org/wiki/Osm2pgsql) for more details.
 

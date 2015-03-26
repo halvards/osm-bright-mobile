@@ -31,7 +31,7 @@ Map { font-directory: url(./fonts); }
 /* Some fonts are larger or smaller than others. Use this variable to
    globally increase or decrease the font sizes. */
 /* Note this doesn't apply to all labels */
-@text_adjust: 8;
+@text_adjust: 6;
 
 /* ================================================================== */
 /* LANDUSE & LANDCOVER COLORS
