@@ -80,32 +80,6 @@
   }
 }
 
-/* ---- National Capital Cities ------------------------------------- */
-
-#place::city[type='city'][admin_level='2'][zoom>=3][zoom<=5] {
-  text-name:'[name]';
-  text-face-name:@sans;
-  text-placement:point;
-  text-fill:@city_text;
-  text-halo-fill:@city_halo;
-  text-halo-radius:2;
-  text-size: 8 + @text_adjust;
-  text-halo-radius:1;
-}
-
-/* ---- State Capital Cities ---------------------------------------- */
-
-#place::city[type='city'][admin_level='4'][zoom>=3][zoom<=5] {
-  text-name:'[name]';
-  text-face-name:@sans;
-  text-placement:point;
-  text-fill:@city_text;
-  text-halo-fill:@city_halo;
-  text-halo-radius:2;
-  text-size: 8 + @text_adjust;
-  text-halo-radius:1;
-}
-
 /* ---- Cities ------------------------------------------------------ */
 
 #place::city[type='city'] {
