@@ -401,7 +401,7 @@
   }
   [type='river'][zoom>=16],
   [type='canal'][zoom=18] {
-    text-size: 14 + @text_adjust;
+    text-size: 12 + @text_adjust;
     text-spacing: 300;
   }
 }
@@ -412,7 +412,7 @@
 
 #motorway_label[zoom>=11][zoom<=14][reflen<=8] {
   shield-name: "[ref]";
-  shield-size: 18;
+  shield-size: 13;
   shield-face-name: @sans_bold;
   shield-fill: #fff;
   shield-file: url(img/shield-motorway-1.png);
@@ -524,23 +524,26 @@
   text-halo-radius:1;
   text-min-distance:60;
   text-avoid-edges: true;
-  [zoom>14][zoom<16] {
+  [zoom>14][zoom<15] {
     text-size:7 + @text_adjust;
   }
-  [zoom=16] {
+  [zoom=15] {
     text-size:8 + @text_adjust;
   }
-  [zoom=17] {
+  [zoom=16] {
     text-size:9 + @text_adjust;
   }
-  [zoom=18] {
+  [zoom=17] {
     text-size:10 + @text_adjust;
   }
-  [zoom=19] {
+  [zoom=18] {
     text-size:12 + @text_adjust;
   }
-  [zoom>=20] {
+  [zoom=19] {
     text-size:14 + @text_adjust;
+  }
+  [zoom>=20] {
+    text-size:16 + @text_adjust;
   }
 }
 

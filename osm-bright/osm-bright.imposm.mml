@@ -556,16 +556,15 @@
         "key_field": "gid",
         "project": "vic_cadastre",
         "srs": "",
-        "table": "( SELECT gid, property, parcel, geom\n  FROM vic_cadastre\n  WHERE property = 'y'\n    AND parcel = 'y'\n) AS data",
+        "table": "( SELECT gid, property, parcel, geom FROM vic_cadastre WHERE property = 'y' AND parcel = 'y' ) AS data",
         "type": "postgis"
       },
       "class": "",
       "geometry": "linestring",
       "id": "vic_cadastre",
       "name": "vic_cadastre",
-      "srs": "",
-      "srs-name": "900913",
-      "status": "on"
+      "srs": "+proj=longlat +ellps=GRS80 +no_defs",
+      "srs-name": "900913"
     },
     {
       "Datasource": {
@@ -576,16 +575,15 @@
         "key_field": "gid",
         "project": "vic_address",
         "srs": "",
-        "table": "( SELECT gid, num_add, geom\n  FROM vic_address\n) AS data",
+        "table": "( SELECT gid, num_add, geom FROM vic_address ) AS data",
         "type": "postgis"
       },
       "class": "",
       "geometry": "linestring",
       "id": "vic_address",
       "name": "vic_address",
-      "srs": "",
-      "srs-name": "900913",
-      "status": "on"
+      "srs": "+proj=longlat +ellps=GRS80 +no_defs",
+      "srs-name": "900913"
     }
   ],
   "Stylesheet": [

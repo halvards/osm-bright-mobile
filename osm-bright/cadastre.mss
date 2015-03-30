@@ -14,12 +14,9 @@
 }
 
 #vic_address[zoom>=19] {
-  text-name: [NUM_ADD];
+  text-name: [num_add];
   text-face-name: @sans;
   text-fill: #555555;
-  [zoom=18] {
-    text-size: @text_adjust;
-  }
   [zoom=19] {
     text-size: 4 + @text_adjust;
   }

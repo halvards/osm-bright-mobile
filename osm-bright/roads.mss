@@ -72,8 +72,8 @@ come in as well.
 @rdz16_maj: 13; @rdz16_med: 11; @rdz16_min: 9;
 @rdz17_maj: 18; @rdz17_med: 16; @rdz17_min: 12;
 @rdz18_maj: 30; @rdz18_med: 24; @rdz18_min: 18;
-@rdz19_maj: 60; @rdz19_med: 48; @rdz19_min: 36;
-@rdz20_maj: 80; @rdz20_med: 36; @rdz20_min: 60;
+@rdz19_maj: 45; @rdz19_med: 35; @rdz19_min: 25;
+@rdz20_maj: 60; @rdz20_med: 50; @rdz20_min: 45;
 
 
 /* ---- Casing ----------------------------------------------- */
