@@ -83,19 +83,15 @@
 /* ---- Cities ------------------------------------------------------ */
 
 #place::city[type='city'] {
-  [zoom>=6][zoom<=15] {
+  [zoom>=7][zoom<=15] {
     text-name:'[name]';
     text-face-name:@sans;
     text-placement:point;
     text-fill:@city_text;
     text-halo-fill:@city_halo;
     text-halo-radius:2;
-    [zoom=6] {
-      text-size:12 + @text_adjust;
-      text-halo-radius:1;
-    }
     [zoom=7] {
-      text-size:13 + @text_adjust;
+      text-size:12 + @text_adjust;
       text-halo-radius:1;
     }
     [zoom=8] {
@@ -459,11 +455,29 @@
   [zoom=11] { text-min-distance:70; }
   [zoom=12] { text-min-distance:80; }
   [zoom=13] { text-min-distance:100; }
-  [zoom>9][zoom<20] {
+  [zoom>9][zoom<14] {
+    text-size:7 + @text_adjust;
+  }
+  [zoom=14] {
+    text-size:8 + @text_adjust;
+  }
+  [zoom=15] {
+    text-size:9 + @text_adjust;
+  }
+  [zoom=16] {
     text-size:10 + @text_adjust;
   }
-  [zoom>=20] {
+  [zoom=17] {
+    text-size:12 + @text_adjust;
+  }
+  [zoom=18] {
     text-size:14 + @text_adjust;
+  }
+  [zoom=19] {
+    text-size:16 + @text_adjust;
+  }
+  [zoom>=20] {
+    text-size:18 + @text_adjust;
   }
 }
 
@@ -478,11 +492,26 @@
   text-halo-radius:1;
   text-min-distance:60;
   text-avoid-edges: true;
-  [zoom>12][zoom<20] {
+  [zoom>12][zoom<15] {
+    text-size:7 + @text_adjust;
+  }
+  [zoom=15] {
+    text-size:8 + @text_adjust;
+  }
+  [zoom=16] {
     text-size:9 + @text_adjust;
   }
-  [zoom>=20] {
+  [zoom=17] {
+    text-size:10 + @text_adjust;
+  }
+  [zoom=18] {
+    text-size:12 + @text_adjust;
+  }
+  [zoom=19] {
     text-size:14 + @text_adjust;
+  }
+  [zoom>=20] {
+    text-size:16 + @text_adjust;
   }
 }
 
@@ -495,8 +524,20 @@
   text-halo-radius:1;
   text-min-distance:60;
   text-avoid-edges: true;
-  [zoom>14][zoom<20] {
+  [zoom>14][zoom<16] {
     text-size:7 + @text_adjust;
+  }
+  [zoom=16] {
+    text-size:8 + @text_adjust;
+  }
+  [zoom=17] {
+    text-size:9 + @text_adjust;
+  }
+  [zoom=18] {
+    text-size:10 + @text_adjust;
+  }
+  [zoom=19] {
+    text-size:12 + @text_adjust;
   }
   [zoom>=20] {
     text-size:14 + @text_adjust;
