@@ -73,6 +73,9 @@ come in as well.
 @rdz16_maj: 13;  @rdz16_med: 11;  @rdz16_min: 9;
 @rdz17_maj: 18;  @rdz17_med: 16;  @rdz17_min: 12;
 @rdz18_maj: 24;  @rdz18_med: 20;  @rdz18_min: 16;
+@rdz19_maj: 28;  @rdz19_med: 24;  @rdz19_min: 20;
+@rdz20_maj: 32;  @rdz20_med: 28;  @rdz20_min: 24;
+
 
 /* ---- Casing ----------------------------------------------- */
 
@@ -166,7 +169,7 @@ come in as well.
     [stylegroup='noauto']   { line-width: @rdz16_min / 4 + 2; }
     [stylegroup='railway']  { line-width: 2 + 2; }
   }
-  [zoom>=17] {
+  [zoom=17] {
     [stylegroup='motorway'] { line-width: @rdz17_maj + 3; }
     [stylegroup='mainroad'] { line-width: @rdz17_med + 2.5; }
     [stylegroup='minorroad']{ line-width: @rdz17_min + 2; }
@@ -174,13 +177,29 @@ come in as well.
     [stylegroup='noauto']   { line-width: @rdz17_min / 4 + 4; }
     [stylegroup='railway']  { line-width: 3 + 4; } // 3 + 4
   }
-  [zoom>=18] {
+  [zoom=18] {
     [stylegroup='motorway'] { line-width: @rdz18_maj + 4; }
     [stylegroup='mainroad'] { line-width: @rdz18_med + 4; }
     [stylegroup='minorroad']{ line-width: @rdz18_min + 3.5; }
     [stylegroup='service']  { line-width: @rdz18_min / 3 + 3.5; }
     [stylegroup='noauto']   { line-width: @rdz18_min / 4 + 6; }
     [stylegroup='railway']  { line-width: 4 + 6; }
+  }
+  [zoom=19] {
+    [stylegroup='motorway'] { line-width: @rdz19_maj + 5; }
+    [stylegroup='mainroad'] { line-width: @rdz19_med + 5; }
+    [stylegroup='minorroad']{ line-width: @rdz19_min + 4.5; }
+    [stylegroup='service']  { line-width: @rdz19_min / 3 + 4.5; }
+    [stylegroup='noauto']   { line-width: @rdz19_min / 4 + 7; }
+    [stylegroup='railway']  { line-width: 5 + 7; }
+  }
+  [zoom>=20] {
+    [stylegroup='motorway'] { line-width: @rdz20_maj + 6; }
+    [stylegroup='mainroad'] { line-width: @rdz20_med + 6; }
+    [stylegroup='minorroad']{ line-width: @rdz20_min + 5.5; }
+    [stylegroup='service']  { line-width: @rdz20_min / 3 + 5.5; }
+    [stylegroup='noauto']   { line-width: @rdz20_min / 4 + 8; }
+    [stylegroup='railway']  { line-width: 5 + 7; }
   }
 }
 
@@ -287,13 +306,29 @@ come in as well.
     [stylegroup='noauto']   { line-width: @rdz17_min / 4; line-dasharray: 2,2; }
     [stylegroup='railway']  { line-width: 3; }
   }
-  [zoom>=18] {
+  [zoom=18] {
     [stylegroup='motorway'] { line-width: @rdz18_maj; }
     [stylegroup='mainroad'] { line-width: @rdz18_med; }
     [stylegroup='minorroad']{ line-width: @rdz18_min; }
     [stylegroup='service']  { line-width: @rdz18_min / 2; }
     [stylegroup='noauto']   { line-width: @rdz18_min / 4; line-dasharray: 3,3; }
     [stylegroup='railway']  { line-width: 4; }
+  }
+  [zoom=19] {
+    [stylegroup='motorway'] { line-width: @rdz19_maj; }
+    [stylegroup='mainroad'] { line-width: @rdz19_med; }
+    [stylegroup='minorroad']{ line-width: @rdz19_min; }
+    [stylegroup='service']  { line-width: @rdz19_min / 2; }
+    [stylegroup='noauto']   { line-width: @rdz19_min / 4; line-dasharray: 4,4; }
+    [stylegroup='railway']  { line-width: 5; }
+  }
+  [zoom>=20] {
+    [stylegroup='motorway'] { line-width: @rdz20_maj; }
+    [stylegroup='mainroad'] { line-width: @rdz20_med; }
+    [stylegroup='minorroad']{ line-width: @rdz20_min; }
+    [stylegroup='service']  { line-width: @rdz20_min / 2; }
+    [stylegroup='noauto']   { line-width: @rdz20_min / 4; line-dasharray: 5,5; }
+    [stylegroup='railway']  { line-width: 6; }
   }
 }
 
@@ -327,9 +362,17 @@ come in as well.
     [stylegroup='noauto']   { line-width: @rdz17_min / 4 + 3; }
     [stylegroup='railway']  { line-width: 3 + 2; }
   }
-  [zoom>=18] {
+  [zoom=18] {
     [stylegroup='noauto']   { line-width: @rdz18_min / 4 + 3; }
     [stylegroup='railway']  { line-width: 4 + 3; }
+  }
+  [zoom=19] {
+    [stylegroup='noauto']   { line-width: @rdz19_min / 4 + 3; }
+    [stylegroup='railway']  { line-width: 5 + 4; }
+  }
+  [zoom>=20] {
+    [stylegroup='noauto']   { line-width: @rdz20_min / 4 + 3; }
+    [stylegroup='railway']  { line-width: 6 + 5; }
   }
 }
 
@@ -352,7 +395,9 @@ come in as well.
   [zoom=15] { marker-width:@rdz15_min * 1.1; }
   [zoom=16] { marker-width:@rdz16_min * 1.1; }
   [zoom=17] { marker-width:@rdz17_min * 1.1; }
-  [zoom>=18] { marker-width:@rdz18_min * 1.1; }
+  [zoom=18] { marker-width:@rdz18_min * 1.1; }
+  [zoom=19] { marker-width:@rdz19_min * 1.1; }
+  [zoom>=20] { marker-width:@rdz20_min * 1.1; }
 }
 
 /* ================================================================== */
@@ -372,7 +417,10 @@ come in as well.
     [zoom=15]{ line-width:11; }
     [zoom=16]{ line-width:15; }
     [zoom=17]{ line-width:19; }
-    [zoom>17]{ line-width:23; }
+    [zoom=18]{ line-width:23; }
+    [zoom=19]{ line-width:27; }
+    [zoom>=20]{ line-width:31; }
+
   }
   [type='taxiway'] {
     [zoom=10]{ line-width:0.2; }
@@ -383,7 +431,10 @@ come in as well.
     [zoom=15]{ line-width:2; }
     [zoom=16]{ line-width:3; }
     [zoom=17]{ line-width:4; }
-    [zoom>17]{ line-width:5; }
+    [zoom=18]{ line-width:5; }
+    [zoom=19]{ line-width:6; }
+    [zoom>=20]{ line-width:7; }
+
   }
 }
 

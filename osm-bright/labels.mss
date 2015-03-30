@@ -172,7 +172,7 @@
     text-character-spacing: 3;
     text-line-spacing: 4;
   }
-  [zoom>=15]{
+  [zoom>=16]{
     text-size:15 + @text_adjust;
     text-character-spacing: 4;
     text-line-spacing: 5;
@@ -182,6 +182,22 @@
     text-character-spacing: 5;
     text-line-spacing: 6;
   }
+  [zoom>=18]{
+    text-size:17 + @text_adjust;
+    text-character-spacing: 5;
+    text-line-spacing: 6;
+  }
+  [zoom>=19]{
+    text-size:18 + @text_adjust;
+    text-character-spacing: 5;
+    text-line-spacing: 6;
+  }
+  [zoom>=20]{
+    text-size:19 + @text_adjust;
+    text-character-spacing: 5;
+    text-line-spacing: 6;
+  }
+
 }
 
 /* ---- Other small places ------------------------------------------ */
@@ -223,8 +239,18 @@
     text-wrap-width: 160;
     text-line-spacing: 4;
   }
-  [zoom>=18] {
+  [zoom=18] {
     text-size:14 + @text_adjust;
+    text-character-spacing: 4;
+    text-line-spacing: 6;
+  }
+  [zoom=19] {
+    text-size:15 + @text_adjust;
+    text-character-spacing: 4;
+    text-line-spacing: 6;
+  }
+  [zoom>=20] {
+    text-size:16 + @text_adjust;
     text-character-spacing: 4;
     text-line-spacing: 6;
   }
@@ -249,8 +275,18 @@
     text-wrap-width: 120;
     text-line-spacing: 2;
   }
-  [zoom>=18] {
+  [zoom=18] {
     text-size:12 + @text_adjust;
+    text-character-spacing: 1;
+    text-line-spacing: 4;
+  }
+  [zoom=19] {
+    text-size:13 + @text_adjust;
+    text-character-spacing: 1;
+    text-line-spacing: 4;
+  }
+  [zoom>=20] {
+    text-size:14 + @text_adjust;
     text-character-spacing: 1;
     text-line-spacing: 4;
   }
