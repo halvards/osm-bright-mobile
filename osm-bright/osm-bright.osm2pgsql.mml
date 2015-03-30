@@ -530,7 +530,7 @@
         "key_field": "gid",
         "project": "vic_cadastre",
         "srs": "",
-        "table": "( SELECT gid, property, parcel, geom FROM vic_cadastre WHERE property = 'y' AND parcel = 'y' ) AS data",
+        "table": "( SELECT gid, property, parcel, geom FROM vic_cadastre WHERE property = 'Y' AND parcel = 'Y' ) AS data",
         "type": "postgis"
       },
       "class": "",

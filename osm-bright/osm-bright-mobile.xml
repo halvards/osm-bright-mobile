@@ -60803,7 +60803,7 @@
        <Parameter name="key_field"><![CDATA[gid]]></Parameter>
        <Parameter name="project"><![CDATA[vic_cadastre]]></Parameter>
        <Parameter name="srs"><![CDATA[]]></Parameter>
-       <Parameter name="table"><![CDATA[( SELECT gid, property, parcel, geom FROM vic_cadastre WHERE property = 'y' AND parcel = 'y' ) AS data]]></Parameter>
+       <Parameter name="table"><![CDATA[( SELECT gid, property, parcel, geom FROM vic_cadastre WHERE property = 'Y' AND parcel = 'Y' ) AS data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
     </Datasource>
   </Layer>
