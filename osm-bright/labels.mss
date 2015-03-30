@@ -18,29 +18,29 @@
   text-halo-fill: @country_halo;
   text-halo-radius: 1;
   [zoom=3] {
-    text-size:10 + @text_adjust;
+    text-size:14 + @text_adjust;
     text-wrap-width: 40;
   }
   [zoom=4] {
-    text-size:11 + @text_adjust;
+    text-size:15 + @text_adjust;
     text-wrap-width: 50;
   }
   [zoom>4] {
     text-halo-radius: 2;
   }
   [zoom=5] {
-    text-size:11 + @text_adjust;
+    text-size:16 + @text_adjust;
     text-wrap-width: 50;
     text-line-spacing: 1;
   }
   [zoom=6] {
-    text-size:12 + @text_adjust;
+    text-size:18 + @text_adjust;
     text-character-spacing: 1;
     text-wrap-width: 80;
     text-line-spacing: 2;
   }
   [zoom=7] {
-    text-size:14 + @text_adjust;
+    text-size:20 + @text_adjust;
     text-character-spacing: 2;
   }
 }
@@ -91,45 +91,45 @@
     text-halo-fill:@city_halo;
     text-halo-radius:2;
     [zoom>=6][zoom<=7][population>=1000000] {
-      text-size: 10 + @text_adjust;
+      text-size:12 + @text_adjust;
       text-halo-radius:1;
     }
     [zoom=8] {
-      text-size: 10 + @text_adjust;
+      text-size:14 + @text_adjust;
       text-halo-radius:1;
     }
     [zoom=9] {
-      text-size:10 + @text_adjust;
+      text-size:15 + @text_adjust;
       text-wrap-width: 60;
     }
     [zoom=10] {
-      text-size:11 + @text_adjust;
+      text-size:16 + @text_adjust;
       text-wrap-width: 70;
     }
     [zoom=11] {
-      text-size:12 + @text_adjust;
+      text-size:17 + @text_adjust;
       text-character-spacing: 1;
       text-wrap-width: 80;
     }
     [zoom=12] {
-      text-size:13 + @text_adjust;
+      text-size:18 + @text_adjust;
       text-character-spacing: 1;
       text-wrap-width: 100;
     }
     [zoom=13] {
-      text-size:14 + @text_adjust;
+      text-size:19 + @text_adjust;
       text-character-spacing: 2;
       text-wrap-width: 200;
       text-transform: uppercase;
     }
     [zoom=14] {
-      text-size:15 + @text_adjust;
+      text-size:20 + @text_adjust;
       text-character-spacing: 4;
       text-wrap-width: 300;
       text-transform: uppercase;
     }
     [zoom=15] {
-      text-size:16 + @text_adjust;
+      text-size:22 + @text_adjust;
       text-character-spacing: 6;
       text-wrap-width: 400;
       text-transform: uppercase;
@@ -150,50 +150,53 @@
   text-wrap-width: 50;
   [zoom>=10] {
     text-halo-radius:2;
-    text-size: 10 + @text_adjust;
+    text-size: 12 + @text_adjust;
   }
-  [zoom>=11]{ text-size:11 + @text_adjust; }
+  [zoom>=11]{
+    text-size:13 + @text_adjust;
+  }
   [zoom>=12]{
-    text-size:12 + @text_adjust;
+    text-size:14 + @text_adjust;
     text-line-spacing: 1;
   }
   [zoom>=13]{
+    text-size:15 + @text_adjust;
     text-transform: uppercase;
     text-character-spacing: 1;
     text-line-spacing: 2;
   }
   [zoom>=14]{
-    text-size:13 + @text_adjust;
+    text-size:16 + @text_adjust;
     text-character-spacing: 2;
     text-line-spacing: 3;
   }
   [zoom>=15]{
-    text-size:14 + @text_adjust;
+    text-size:17 + @text_adjust;
     text-character-spacing: 3;
     text-line-spacing: 4;
   }
   [zoom>=16]{
-    text-size:15 + @text_adjust;
+    text-size:18 + @text_adjust;
     text-character-spacing: 4;
     text-line-spacing: 5;
   }
   [zoom>=17]{
-    text-size:16 + @text_adjust;
+    text-size:19 + @text_adjust;
     text-character-spacing: 5;
     text-line-spacing: 6;
   }
   [zoom>=18]{
-    text-size:17 + @text_adjust;
+    text-size:20 + @text_adjust;
     text-character-spacing: 5;
     text-line-spacing: 6;
   }
   [zoom>=19]{
-    text-size:18 + @text_adjust;
+    text-size:21 + @text_adjust;
     text-character-spacing: 5;
     text-line-spacing: 6;
   }
   [zoom>=20]{
-    text-size:19 + @text_adjust;
+    text-size:22 + @text_adjust;
     text-character-spacing: 5;
     text-line-spacing: 6;
   }
@@ -412,7 +415,7 @@
 
 #motorway_label[zoom>=11][zoom<=14][reflen<=8] {
   shield-name: "[ref]";
-  shield-size: 9;
+  shield-size: 18;
   shield-face-name: @sans_bold;
   shield-fill: #fff;
   shield-file: url(img/shield-motorway-1.png);

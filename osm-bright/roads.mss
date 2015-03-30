@@ -62,19 +62,18 @@ come in as well.
 @rdz16_maj: 8;   @rdz16_med: 6;   @rdz16_min: 4;
 @rdz17_maj: 14;  @rdz17_med: 12;  @rdz17_min: 10;
 @rdz18_maj: 20;  @rdz18_med: 17;  @rdz18_min: 14;*/
-@rdz08_maj: 5.2;
-@rdz09_maj: 5.4; @rdz09_med: 4.6; @rdz09_min: 0;
-@rdz10_maj: 5.8; @rdz10_med: 4.8; @rdz10_min: 0;
-@rdz11_maj: 6;   @rdz11_med: 4.2; @rdz11_min: 0;
-@rdz12_maj: 6.5; @rdz12_med: 5.4; @rdz12_min: 4.5;
-@rdz13_maj: 7;   @rdz13_med: 6.0; @rdz13_min: 5;
-@rdz14_maj: 8;   @rdz14_med: 7;   @rdz14_min: 6;
-@rdz15_maj: 9;   @rdz15_med: 8;   @rdz15_min: 7;
-@rdz16_maj: 13;  @rdz16_med: 11;  @rdz16_min: 9;
-@rdz17_maj: 18;  @rdz17_med: 16;  @rdz17_min: 12;
-@rdz18_maj: 24;  @rdz18_med: 20;  @rdz18_min: 16;
-@rdz19_maj: 28;  @rdz19_med: 24;  @rdz19_min: 20;
-@rdz20_maj: 32;  @rdz20_med: 28;  @rdz20_min: 24;
+@rdz09_maj: 2;  @rdz09_med: 0;  @rdz09_min: 0;
+@rdz10_maj: 3;  @rdz10_med: 0;  @rdz10_min: 0;
+@rdz11_maj: 4;  @rdz11_med: 0;  @rdz11_min: 0;
+@rdz12_maj: 5;  @rdz12_med: 2;  @rdz12_min: 0;
+@rdz13_maj: 6;  @rdz13_med: 4;  @rdz13_min: 1;
+@rdz14_maj: 8;  @rdz14_med: 6;  @rdz14_min: 3;
+@rdz15_maj: 9;  @rdz15_med: 8;  @rdz15_min: 6;
+@rdz16_maj: 13; @rdz16_med: 11; @rdz16_min: 9;
+@rdz17_maj: 18; @rdz17_med: 16; @rdz17_min: 12;
+@rdz18_maj: 24; @rdz18_med: 20; @rdz18_min: 16;
+@rdz19_maj: 32; @rdz19_med: 28; @rdz19_min: 24;
+@rdz20_maj: 36; @rdz20_med: 32; @rdz20_min: 28;
 
 
 /* ---- Casing ----------------------------------------------- */
@@ -199,7 +198,7 @@ come in as well.
     [stylegroup='minorroad']{ line-width: @rdz20_min + 5.5; }
     [stylegroup='service']  { line-width: @rdz20_min / 3 + 5.5; }
     [stylegroup='noauto']   { line-width: @rdz20_min / 4 + 8; }
-    [stylegroup='railway']  { line-width: 5 + 7; }
+    [stylegroup='railway']  { line-width: 6 + 8; }
   }
 }
 
@@ -367,11 +366,11 @@ come in as well.
     [stylegroup='railway']  { line-width: 4 + 3; }
   }
   [zoom=19] {
-    [stylegroup='noauto']   { line-width: @rdz19_min / 4 + 3; }
+    [stylegroup='noauto']   { line-width: @rdz19_min / 4 + 4; }
     [stylegroup='railway']  { line-width: 5 + 4; }
   }
   [zoom>=20] {
-    [stylegroup='noauto']   { line-width: @rdz20_min / 4 + 3; }
+    [stylegroup='noauto']   { line-width: @rdz20_min / 4 + 5; }
     [stylegroup='railway']  { line-width: 6 + 5; }
   }
 }
