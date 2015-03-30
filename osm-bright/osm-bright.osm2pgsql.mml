@@ -520,13 +520,54 @@
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "srs-name": "900913",
       "status": "on"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "estimate_extent": "true",
+        "geometry_field": "geom",
+        "id": "vic_cadastre",
+        "key_field": "gid",
+        "project": "vic_cadastre",
+        "srs": "",
+        "table": "( SELECT gid, property, parcel, geom\n  FROM vic_cadastre\n  WHERE property = 'y'\n    AND parcel = 'y'\n) AS data",
+        "type": "postgis"
+      },
+      "class": "",
+      "geometry": "linestring",
+      "id": "vic_cadastre",
+      "name": "vic_cadastre",
+      "srs": "",
+      "srs-name": "900913",
+      "status": "on"
+    },
+    {
+      "Datasource": {
+        "dbname": "osm",
+        "estimate_extent": "true",
+        "geometry_field": "geom",
+        "id": "vic_address",
+        "key_field": "gid",
+        "project": "vic_address",
+        "srs": "",
+        "table": "( SELECT gid, num_add, geom\n  FROM vic_address\n) AS data",
+        "type": "postgis"
+      },
+      "class": "",
+      "geometry": "linestring",
+      "id": "vic_address",
+      "name": "vic_address",
+      "srs": "",
+      "srs-name": "900913",
+      "status": "on"
     }
   ],
   "Stylesheet": [
     "palette.mss",
     "base.mss",
     "roads.mss",
-    "labels.mss"
+    "labels.mss",
+    "cadastre.mss"
   ],
   "attribution": "Data \u00a9 OpenStreetMap (and) contributors, CC-BY-SA",
   "bounds": [
