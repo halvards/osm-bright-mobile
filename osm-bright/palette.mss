@@ -71,23 +71,23 @@ Map { font-directory: url(./fonts); }
 
 @motorway_line:     #E65C5C;
 @motorway_fill:     lighten(@motorway_line,15%);
-@motorway_case:     @motorway_line * 0.9;
+@motorway_case:     @motorway_line * 0.7;
 
 @trunk_line:        #E68A5C;
 @trunk_fill:        lighten(@trunk_line,15%);
-@trunk_case:        @trunk_line * 0.9;
+@trunk_case:        @trunk_line * 0.7;
 
 @primary_line:      #FFC859;
 @primary_fill:      lighten(@primary_line,15%);
-@primary_case:      @primary_line * 0.9;
+@primary_case:      @primary_line * 0.7;
 
 @secondary_line:    #FFE873;
 @secondary_fill:    lighten(@secondary_line,10%);
-@secondary_case:    @secondary_line * 0.9;
+@secondary_case:    @secondary_line * 0.7;
 
 @standard_line:     @land * 0.50;
 @standard_fill:     #fff;
-@standard_case:     @land * 0.9;
+@standard_case:     @land * 0.7;
 
 @pedestrian_line:   @standard_line;
 @pedestrian_fill:   #FAFAF5;
