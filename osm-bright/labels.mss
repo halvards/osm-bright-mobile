@@ -272,9 +272,9 @@
   [zoom>=17][area>5000],
   [zoom>=18][area>=0] {
     text-name: "[name]";
-    text-halo-radius: 1.5;
+    text-halo-radius: 1;
     text-face-name:@sans;
-    text-size: 12;
+    text-size: 4 + @text_adjust;
     text-wrap-width:30;
     text-fill: #888;
     text-halo-fill: #fff;
@@ -312,22 +312,22 @@
   [zoom=17][area>20000],
   [zoom=18][area>5000] {
     text-name: "[name]";
-    text-size: 11;
+    text-size: 4 + @text_adjust;
     text-wrap-width: 60;
-    text-character-spacing: 1;
+//    text-character-spacing: 1;
     text-halo-radius: 2;
   }
   [zoom=16][area>1600000],
   [zoom=17][area>80000],
   [zoom=18][area>20000] {
-    text-size: 15;
-    text-character-spacing: 2;
+    text-size: 4 + @text_adjust;
+  //  text-character-spacing: 2;
     text-wrap-width: 120;
   }
   [zoom>=17][area>1600000],
   [zoom>=18][area>80000] {
-    text-size: 20;
-    text-character-spacing: 3;
+    text-size: 4 + @text_adjust;
+    //text-character-spacing: 3;
     text-wrap-width: 180;
   }
 }
@@ -440,29 +440,12 @@
   text-name:'[name]';
   text-face-name:@sans;
   text-placement:line;
-  text-size:9 + @text_adjust;
+  text-size:7 + @text_adjust;
   text-fill:@road_text;
   text-halo-fill:@road_halo;
   text-halo-radius:1;
   text-min-distance:60;
   text-avoid-edges: true;
 }
-
-/* ================================================================== */
-/* ONE-WAY ARROWS
-/* ================================================================== */
-
-#motorway_label[oneway!=0][zoom>=16],
-#mainroad_label[oneway!=0][zoom>=16],
-#minorroad_label[oneway!=0][zoom>=16] {
-  marker-placement:line;
-  marker-max-error: 0.5;
-  marker-spacing: 200;
-  marker-file: url(img/icon/oneway.svg);
-  [oneway=-1] { marker-file: url(img/icon/oneway-reverse.svg); }
-  [zoom=16] { marker-transform: "scale(0.5)"; }
-  [zoom=17] { marker-transform: "scale(0.75)"; }
-}
-
 
 /* ****************************************************************** */
