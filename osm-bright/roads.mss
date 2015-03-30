@@ -73,7 +73,7 @@ come in as well.
 @rdz17_maj: 18; @rdz17_med: 16; @rdz17_min: 12;
 @rdz18_maj: 24; @rdz18_med: 20; @rdz18_min: 16;
 @rdz19_maj: 32; @rdz19_med: 28; @rdz19_min: 24;
-@rdz20_maj: 36; @rdz20_med: 32; @rdz20_min: 28;
+@rdz20_maj: 40; @rdz20_med: 36; @rdz20_min: 32;
 
 
 /* ---- Casing ----------------------------------------------- */

@@ -90,8 +90,12 @@
     text-fill:@city_text;
     text-halo-fill:@city_halo;
     text-halo-radius:2;
-    [zoom>=6][zoom<=7][population>=1000000] {
+    [zoom=6] {
       text-size:12 + @text_adjust;
+      text-halo-radius:1;
+    }
+    [zoom=7] {
+      text-size:13 + @text_adjust;
       text-halo-radius:1;
     }
     [zoom=8] {
@@ -353,20 +357,17 @@
     text-name: "[name]";
     text-size: 4 + @text_adjust;
     text-wrap-width: 60;
-//    text-character-spacing: 1;
     text-halo-radius: 2;
   }
   [zoom=16][area>1600000],
   [zoom=17][area>80000],
   [zoom=18][area>20000] {
     text-size: 4 + @text_adjust;
-  //  text-character-spacing: 2;
     text-wrap-width: 120;
   }
   [zoom>=17][area>1600000],
   [zoom>=18][area>80000] {
     text-size: 4 + @text_adjust;
-    //text-character-spacing: 3;
     text-wrap-width: 180;
   }
 }
@@ -455,10 +456,15 @@
   text-halo-radius:1;
   text-min-distance:60;
   text-avoid-edges: true;
-  text-size:10 + @text_adjust;
   [zoom=11] { text-min-distance:70; }
   [zoom=12] { text-min-distance:80; }
   [zoom=13] { text-min-distance:100; }
+  [zoom>9][zoom<20] {
+    text-size:10 + @text_adjust;
+  }
+  [zoom>=20] {
+    text-size:14 + @text_adjust;
+  }
 }
 
 #mainroad_label[type='primary'][zoom>12],
@@ -472,19 +478,29 @@
   text-halo-radius:1;
   text-min-distance:60;
   text-avoid-edges: true;
-  text-size:9 + @text_adjust;
+  [zoom>12][zoom<20] {
+    text-size:9 + @text_adjust;
+  }
+  [zoom>=20] {
+    text-size:14 + @text_adjust;
+  }
 }
 
 #minorroad_label[zoom>14] {
   text-name:'[name]';
   text-face-name:@sans;
   text-placement:line;
-  text-size:7 + @text_adjust;
   text-fill:@road_text;
   text-halo-fill:@road_halo;
   text-halo-radius:1;
   text-min-distance:60;
   text-avoid-edges: true;
+  [zoom>14][zoom<20] {
+    text-size:7 + @text_adjust;
+  }
+  [zoom>=20] {
+    text-size:14 + @text_adjust;
+  }
 }
 
 /* ****************************************************************** */
