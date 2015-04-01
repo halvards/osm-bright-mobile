@@ -60773,7 +60773,6 @@
 <Style name="vic_cadastre" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>750</MaxScaleDenominator>
-    <MinScaleDenominator>500</MinScaleDenominator>
     <LineSymbolizer stroke-width="0.5" stroke="#333333" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
@@ -60785,10 +60784,6 @@
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <MinScaleDenominator>1500</MinScaleDenominator>
     <LineSymbolizer stroke-width="0.3" stroke="#333333" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>500</MaxScaleDenominator>
-    <LineSymbolizer stroke="#333333" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
 </Style>
 <Layer name="vic_cadastre"
@@ -60811,17 +60806,12 @@
 <Style name="vic_address" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>750</MaxScaleDenominator>
-    <MinScaleDenominator>500</MinScaleDenominator>
-    <TextSymbolizer size="18" fontset-name="fontset-0" fill="#555555" ><![CDATA[[num_add]]]></TextSymbolizer>
+    <TextSymbolizer size="18" fontset-name="fontset-0" fill="#666666" ><![CDATA[[num_add]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
     <MinScaleDenominator>750</MinScaleDenominator>
-    <TextSymbolizer size="16" fontset-name="fontset-0" fill="#555555" ><![CDATA[[num_add]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>500</MaxScaleDenominator>
-    <TextSymbolizer fontset-name="fontset-0" fill="#555555" ><![CDATA[[num_add]]]></TextSymbolizer>
+    <TextSymbolizer size="16" fontset-name="fontset-0" fill="#666666" ><![CDATA[[num_add]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="vic_address"
