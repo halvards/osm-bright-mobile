@@ -2,6 +2,8 @@
   line-color: #333333;
   line-join: round;
   line-cap: round;
+  line-smooth: 1.0;
+  line-gamma: 1.0;
   [zoom=18] {
     line-width: 0.3;
   }
